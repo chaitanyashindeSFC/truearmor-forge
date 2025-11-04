@@ -5,9 +5,10 @@ import CodeBlock from "@/components/CodeBlock";
 import DocsLayout from "@/components/DocsLayout";
 
 const Introduction = () => {
-  const installCode = `npm install stfox-tailwind-react-ui@latest`;
+  const installCode = `npm install @chaitanya123123/truearmor-ui-components`;
 
-  const importCode = `import { Button, Alert, Card } from "stfox-tailwind-react-ui";
+  const importCode = `import { ButtonTA, AlertTA, CardTA } from "@chaitanya123123/truearmor-ui-components";
+import "@chaitanya123123/truearmor-ui-components/styles.css";
 
 function App() {
   return (

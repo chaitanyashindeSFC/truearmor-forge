@@ -5,15 +5,15 @@ import CodeBlock from "@/components/CodeBlock";
 import DocsLayout from "@/components/DocsLayout";
 
 const Installation = () => {
-  const npmInstall = `npm install stfox-tailwind-react-ui@latest`;
-  const yarnInstall = `yarn add stfox-tailwind-react-ui`;
-  const pnpmInstall = `pnpm add stfox-tailwind-react-ui`;
+  const npmInstall = `npm install @chaitanya123123/truearmor-ui-components`;
+  const yarnInstall = `yarn add @chaitanya123123/truearmor-ui-components`;
+  const pnpmInstall = `pnpm add @chaitanya123123/truearmor-ui-components`;
 
   const tailwindConfig = `// tailwind.config.js
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    "./node_modules/stfox-tailwind-react-ui/**/*.js",
+    "./node_modules/@chaitanya123123/truearmor-ui-components/**/*.js",
   ],
   theme: {
     extend: {},

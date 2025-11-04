@@ -24,9 +24,10 @@ const Index = () => {
       </header>
 
       <main>
-        <section className="container px-4 py-24 md:py-32 md:px-6">
-          <div className="mx-auto max-w-4xl text-center space-y-8 animate-fade-in">
-            <div className="inline-flex items-center rounded-full border px-4 py-1.5 text-sm bg-muted">
+        <section className="relative container px-4 py-24 md:py-32 md:px-6 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-hero opacity-10 blur-3xl"></div>
+          <div className="mx-auto max-w-4xl text-center space-y-8 animate-fade-in relative z-10">
+            <div className="inline-flex items-center rounded-full border px-4 py-1.5 text-sm bg-muted shadow-soft">
               <span className="text-primary font-medium">New:</span>
               <span className="ml-2 text-muted-foreground">Version 1.0 is now available</span>
             </div>
@@ -34,7 +35,7 @@ const Index = () => {
             <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
               Build Beautiful Apps
               <br />
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-hero bg-clip-text text-transparent">
                 Faster Than Ever
               </span>
             </h1>
@@ -132,17 +133,20 @@ const Index = () => {
 
         <section className="container px-4 py-16 md:px-6">
           <div className="mx-auto max-w-4xl">
-            <div className="rounded-2xl border bg-gradient-primary p-12 text-white shadow-large text-center">
-              <h2 className="text-3xl font-bold mb-4">Ready to build something amazing?</h2>
-              <p className="text-lg mb-8 opacity-90">
-                Join thousands of developers using TrueArmor UI to create beautiful applications.
-              </p>
-              <a href="/quickstart">
-                <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
-                  Start Building Now
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </a>
+            <div className="rounded-2xl border bg-gradient-hero p-12 text-white shadow-glow text-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent_50%)]"></div>
+              <div className="relative z-10">
+                <h2 className="text-3xl font-bold mb-4">Ready to build something amazing?</h2>
+                <p className="text-lg mb-8 opacity-90">
+                  Join thousands of developers using TrueArmor UI to create beautiful applications.
+                </p>
+                <a href="/quickstart">
+                  <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8 shadow-large">
+                    Start Building Now
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </section>
